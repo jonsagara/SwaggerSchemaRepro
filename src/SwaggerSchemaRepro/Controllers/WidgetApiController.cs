@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace SwaggerSchemaRepro.Controllers
 {
+    [ApiController]
+    [Route("widgets")]
     public class WidgetApiController : ControllerBase
     {
         [HttpPost]
@@ -20,6 +21,7 @@ namespace SwaggerSchemaRepro.Controllers
 
     public class CreateWidgetsModel
     {
+        [SwaggerSchema(ReadOnly = false)]
         public List<WidgetModel> Widgets { get; private set; } = new List<WidgetModel>();
     }
 
