@@ -48,6 +48,9 @@ namespace SwaggerSchemaRepro
 
             app.UseEndpoints(endpoints =>
             {
+                // Support attribute routing.
+                endpoints.MapControllers();
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
