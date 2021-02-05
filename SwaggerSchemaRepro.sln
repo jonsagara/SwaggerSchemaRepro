@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30615.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerSchemaRepro", "src\SwaggerSchemaRepro\SwaggerSchemaRepro.csproj", "{0E6513B5-6458-4C77-8395-9DB360722C79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerSchemaRepro", "src\SwaggerSchemaRepro\SwaggerSchemaRepro.csproj", "{0E6513B5-6458-4C77-8395-9DB360722C79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{B6496CD1-3802-4C61-ABF1-59D39F83FE36}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
